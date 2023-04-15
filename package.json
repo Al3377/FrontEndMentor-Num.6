@@ -1,0 +1,14 @@
+{
+  "name": "frontendmentor-num.6",
+  "version": "1.0.0",
+  "description": "social-proof-section-master",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded sass/main.scss:css/style.css"
+  },
+  "author": "Alen Vitas",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}

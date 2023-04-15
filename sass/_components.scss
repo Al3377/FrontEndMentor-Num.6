@@ -1,0 +1,90 @@
+@use "variables" as v;
+.hero-title {
+  color: v.$very-dark-mangenta;
+  font-size: 2.6rem;
+  line-height: 0.8;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  @media (min-width: 1440px) {
+    font-size: 3.8rem;
+    text-align: left;
+  }
+}
+.hero-paragraph {
+  color: v.$dark-grayish-mangenta;
+  text-align: center;
+  @media (min-width: 1440px) {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+}
+.star {
+  display: inline-block;
+  @media (min-width: 1440px) {
+    margin-right: 0.2rem;
+  }
+}
+.rating-tab {
+  border-radius: 5px;
+  margin: 0.8rem;
+  background-color: v.$dark-grayish-mangenta-bg;
+  padding: 0.6rem 2rem;
+  text-align: center;
+
+  &__text {
+    color: v.$very-dark-mangenta;
+    font-weight: 700;
+    @media (min-width: 1440px) {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+
+  &__stars {
+    @media (min-width: 1440px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.bottom-container {
+  &__card {
+    background-color: v.$very-dark-mangenta;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    @media (min-width: 1440px) {
+      padding: 1.6rem;
+    }
+  }
+}
+.user {
+  display: flex;
+  align-items: center;
+  &__pic {
+    display: inline-block;
+    max-width: 15%;
+    margin-right: 1.6rem;
+
+    &--round {
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+
+    &--name {
+      color: v.$white;
+    }
+    &--status {
+      color: v.$soft-pink;
+    }
+  }
+}
+.user-comment {
+  margin: 0.8rem 0;
+  color: v.$white;
+}
